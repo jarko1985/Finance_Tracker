@@ -4,10 +4,13 @@
 
 @layer base {
   body {
-    @apply bg-slate-900 text-white;
+    @apply bg-slate-900 text-white relative;
   }
   button {
     @apply transition-all duration-100 hover:scale-110;
+  }
+  input {
+    @apply bg-slate-600 rounded-xl px-4 py-2;
   }
 }
 
@@ -15,7 +18,17 @@
   .btn {
     @apply px-4 py-2 text-sm capitalize rounded-xl;
   }
+  .btn-primary {
+    @apply border bg-slate-700 border-slate-700 text-lime-400;
+  }
+  .btn-primary-outline {
+    @apply border border-lime-400 text-lime-400;
+  }
   .btn-danger {
-    @apply bg-red-600 border-red-600 text-white;
+    @apply border bg-red-600 border-red-600 text-white;
+  }
+
+  .input-group {
+    @apply flex flex-col gap-4;
   }
 }

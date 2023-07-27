@@ -4,7 +4,7 @@ function Nav() {
     <header className="container max-w-4xl px-6 py-6 mx-auto">
       <div className="flex items-center justify-between">
         {/* User Information */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <div className="h-[40px] w-[40px] rounded-full overflow-hidden">
             {/* img */}
             <img
@@ -18,7 +18,7 @@ function Nav() {
         </div>
 
         {/* Right Side of Our Nav */}
-        <nav className="flex items-center gap-2">
+        <nav className="flex items-center gap-4">
           <div>
             <ImStatsDots className="text-2xl" />
           </div>
