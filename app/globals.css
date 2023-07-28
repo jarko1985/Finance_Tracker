@@ -37,6 +37,6 @@
     @apply flex flex-col gap-4;
   }
   .copy {
-    @apply font-edu text-center text-xs;
+    @apply font-edu text-center text-xs mx-auto;
   }
 }
