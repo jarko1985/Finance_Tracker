@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Poppins&display=swap");
+
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-slate-900 text-white relative;
   }
@@ -30,5 +35,8 @@
 
   .input-group {
     @apply flex flex-col gap-4;
+  }
+  .copy {
+    @apply font-edu text-center text-xs;
   }
 }
