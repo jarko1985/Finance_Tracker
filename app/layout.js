@@ -1,5 +1,6 @@
 import Nav from "./components/Navigation";
 import "./globals.css";
+import FinanceContextProvider from "@/lib/store/finance-context";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+      <FinanceContextProvider>
         <Nav />
         {children}
+        </FinanceContextProvider>
       </body>
     </html>
   );
